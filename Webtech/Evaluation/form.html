@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donation Form</title>
+</head>
+<body>
+
+    <p><font color="red">*</font> - Denotes Required Information</p>
+    <p><b>&gt; 1 Donation</b> &nbsp; &gt; 2 Confirmation &nbsp; &gt; Thank You!</p>
+
+    <form method="post">
+        <table>
+            <!-- Donor Information -->
+            <tr>
+                <td colspan="2"><h3><font color="red">Donor Information</font></h3></td>
+            </tr>
+
+            <tr>
+                <td><label for="fname">First Name<font color="red">*</font> :</label></td>
+                <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Last Name<font color="red">*</font> :</label></td>
+                <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="company">Company :</label></td>
+                <td><input type="text" id="company" name="company"></td>
+            </tr>
+
+            <tr>
+                <td><label for="address1">Address 1<font color="red">*</font> :</label></td>
+                <td><input type="text" id="address1" name="address1" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="address2">Address 2 :</label></td>
+                <td><input type="text" id="address2" name="address2"></td>
+            </tr>
+
+            <tr>
+                <td><label for="city">City<font color="red">*</font> :</label></td>
+                <td><input type="text" id="city" name="city" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="state">State / Division<font color="red">*</font> :</label></td>
+                <td>
+                    <select id="state" name="state" required>
+                        <option value="">Please select any</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="zip">Zip Code<font color="red">*</font> :</label></td>
+                <td><input type="text" id="zip" name="zip" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country<font color="red">*</font> :</label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="Bangladesh" selected>Bangladesh</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone :</label></td>
+                <td><input type="text" id="phone" name="phone"></td>
+            </tr>
+
+            <tr>
+                <td><label for="fax">Fax :</label></td>
+                <td><input type="text" id="fax" name="fax"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email<font color="red">*</font> :</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Donation Amount<font color="red">*</font> :</label></td>
+                <td>
+                    <input type="radio" name="amount" value="none" checked> None
+                    <input type="radio" name="amount" value="500"> 500 Tk
+                    <input type="radio" name="amount" value="1000"> 1000 Tk
+                    <input type="radio" name="amount" value="2000"> 2000 Tk
+                    <input type="radio" name="amount" value="5000"> 5000 Tk
+                    <input type="radio" name="amount" value="other"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="other_amount">Other Amount :</label></td>
+                <td><input type="text" id="other_amount" name="other_amount"></td>
+            </tr>
+
+            <tr>
+                <td><label>Recurring Donation :</label></td>
+                <td>
+                    <input type="checkbox" name="recurring" value="yes"> I am interested in giving on a regular basis.
+                    <br>
+                    Monthly Amount: <input type="text" name="monthly_amount" size="6">
+                    For <input type="text" name="monthly_months" size="4"> Months
+                </td>
+            </tr>
+
+            <!-- Honorarium and Memorial Donation Information -->
+            <tr>
+                <td colspan="2"><h3><font color="red">Honorarium and Memorial Donation Information</font></h3></td>
+            </tr>
+
+            <tr>
+                <td><label>I would like to make this donation :</label></td>
+                <td>
+                    <input type="radio" name="honor_type" value="honor"> To Honor
+                    <br>
+                    <input type="radio" name="honor_type" value="memory"> In Memory of
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="h_name">Name :</label></td>
+                <td><input type="text" id="h_name" name="h_name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="ack_to">Acknowledge Donation to :</label></td>
+                <td><input type="text" id="ack_to" name="ack_to"></td>
+            </tr>
+
+            <tr>
+                <td><label for="h_address">Address :</label></td>
+                <td><input type="text" id="h_address" name="h_address"></td>
+            </tr>
+
+            <tr>
+                <td><label for="h_city">City :</label></td>
+                <td><input type="text" id="h_city" name="h_city"></td>
+            </tr>
+
+            <tr>
+                <td><label for="h_state">State / Division :</label></td>
+                <td>
+                    <select id="h_state" name="h_state">
+                        <option value="">Please select any</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="h_zip">Zip :</label></td>
+                <td><input type="text" id="h_zip" name="h_zip"></td>
+            </tr>
+
+            <!-- Additional Information -->
+            <tr>
+                <td colspan="2"><h3><font color="red">Additional Information</font></h3></td>
+            </tr>
+
+            <tr>
+                <td><label for="pub_name">Name :</label></td>
+                <td><input type="text" id="pub_name" name="pub_name"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="anon" value="yes"> I would like my gift to remain anonymous.
+                    <br>
+                    <input type="checkbox" name="match" value="yes"> My employer offers a matching gift program.
+                    <br>
+                    <input type="checkbox" name="no_ack" value="yes"> Please save the cost of acknowledging this gift.
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="comments">Comments :</label></td>
+                <td><textarea id="comments" name="comments" rows="4" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label>How may we contact you? :</label></td>
+                <td>
+                    <input type="checkbox" name="contact" value="email"> E-mail
+                    <input type="checkbox" name="contact" value="mail"> Postal Mail
+                    <input type="checkbox" name="contact" value="phone"> Telephone
+                    <input type="checkbox" name="contact" value="fax"> Fax
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Newsletter by :</label></td>
+                <td>
+                    <input type="checkbox" name="news" value="email"> E-mail
+                    <input type="checkbox" name="news" value="mail"> Postal Mail
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="volunteer" value="yes"> I would like information about volunteering
+                </td>
+            </tr>
+
+            <!-- Submit and Reset Buttons -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+- Full Name
+- Job Title
+-Short Address
+
+Bio
+Social Link
+GitHub
+Linkid
+
+Copyright
+
+
+
+Day2:
+education.html:
+University Icon
+University Name
+Degree Name
+Relevant cources
+
+HSC College Icon
+HSC College Name
+Stream
+Relevant Subjects
+
+SSC School Icon
+SSC School Name
+Stream
+Relevant Subjects
